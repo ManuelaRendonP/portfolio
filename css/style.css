@@ -117,40 +117,43 @@ body {
     padding: 20px 15px 5px 15px;
 }
 
-.projects .container h2 {
+.projects .container h2, .projects .container>h5{
     width: 100%;
     text-align: center;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
 }
 
-/* CONTACT FORM */
-
-/* .download {
-    margin-bottom: 0px;
-}
-
-.contact-text {
-    margin-bottom: 10px;
-}
-
-.btn-sm {
-    margin-top: 20px;
+.btn-go {
     width: 100%;
-    font-weight: 600;
-    text-transform: uppercase;
 }
 
-.contact-form h2{
+/* SKILLS */
+.info-skills>h2, .info-skills>h5 {
     width: 100%;
     text-align: center;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
 }
 
-#contact-form {
-    padding: 15px;
-} */
+.info-skills {
+    padding-top: 15px;
+}
+
+.card-img-skill {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.card-skill {
+    padding-bottom: 10px;
+}
+
+.skill-cards {
+    padding: 10px 10px 10px 10px;
+}
 
 /* FOOTER */
 
@@ -160,28 +163,7 @@ footer {
     color: #ffffff;
 }
 
-footer ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-}
 
-footer li {
-    padding: 0 10px;
-}
-
-footer ul a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-footer ul a:hover {
-    opacity: 1;
-}
 
 footer .social {
     text-align: center;
@@ -214,6 +196,10 @@ footer .copyright {
     margin-bottom: 0;
 }
 
+footer .contact {
+    text-align: center;
+}
+
 @media (max-width: 770px) {
 	/* HOME */
 	.image-home {
@@ -228,9 +214,4 @@ footer .copyright {
 		margin: auto;
 		text-align: center;
 	}
-
-	/* CONTACT FORM
-	.map {
-		display: none;
-	} */
 }
