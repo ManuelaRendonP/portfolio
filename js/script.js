@@ -3,25 +3,24 @@ let skillsList = []
 
 projectsList.push({
     name: 'QR code component',
-    description: 'This is a solution to the QR code component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.',
-    image: 'assets/images/Screenshot Desktop.png',
+    description: 'Esta es una solución al desafío del componente de código QR en Frontend Mentor.',
+    image: 'assets/images/QR-code-component.png',
     link: 'https://qr-code-component-manuela-rendon.netlify.app/'
 })
 
 function renderProjects(arr) {
-    for (project of arr ){
+    for (project of arr) {
         let card = `
-        <div class="col-md-4">
-            <div class="card">
-                <img src="${project.image}" class="card-img-top" alt="${project.name}">
-                    <div class="card-body">
-                        <h5 class="card-title">${project.name}</h5>
-                        <p class="card-text">${project.description}</p>
-                        <a href="${project.link}" class="btn btn-sm btn-go">Project website</a>
-                    </div>
-            </div>
-        </div>`
-        document.querySelector('.container-cards').insertAdjacentHTML('beforeend', card)
+        <a href="${project.link}" class="card-link">
+            <figure class="card">
+                <img src="${project.image}" class="card__image" />
+                <figcaption class="card__body">
+                    <h2 class="card__title">${project.name}</h2>
+                    <p class="card__description">${project.description}</p>
+                </figcaption>
+            </figure>
+        </a>`
+        document.querySelector('.card-projects').insertAdjacentHTML('beforeend', card)
     }
 }
 
@@ -80,17 +79,20 @@ skillsList.push({
     link: 'https://www.postgresql.org/'
 })
 
+skillsList.push({
+    image: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+    link: 'https://github.com/'
+})
+
 function renderSkills(arr) {
     for (skill of arr) {
         let skillCard = `
-            <div class="col-md-3">
-                <div class="card-skill">
-                    <a href="${skill.link}">
-                        <img src="${skill.image}" class="card-img-skill">
-                    </a>
-                </div>
-            </div>`
-            document.querySelector('.skill-cards').insertAdjacentHTML('beforeend', skillCard)
+        <a href="${skill.link}" class="card-link">
+            <figure class="card-skill">
+                <img src="${skill.image}" class="card__image-skill" />
+            </figure>
+        </a>`
+        document.querySelector('.skill-cards').insertAdjacentHTML('beforeend', skillCard)
     }
 }
 
