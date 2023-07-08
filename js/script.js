@@ -98,3 +98,8 @@ function renderSkills(arr) {
 
 renderProjects(projectsList)
 renderSkills(skillsList)
+
+function toggleDropdown() {
+    var dropdown = document.querySelector('.dropdown');
+    dropdown.classList.toggle('open');
+}

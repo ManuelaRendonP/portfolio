@@ -1,6 +1,5 @@
 body {
-    padding-top: 72px;
-    background: linear-gradient(to bottom, #663263, #c579c5);
+    background: linear-gradient(to bottom, #000, #595959);
     color: white;
     scroll-behavior: smooth;
 }
@@ -11,7 +10,58 @@ a {
 }
 
 /* NAVBAR */
+nav {
+    padding-top: 12px;
+}
 
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-left: 1rem;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    padding: 0.5rem;
+    list-style: none;
+    right: 0;
+    /* Ajuste */
+}
+
+.dropdown.open .dropdown-menu {
+    display: block;
+    left: 0;
+    /* Ajuste */
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-toggle i {
+    font-size: 1.5rem;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown>a, dropdown-menu>a {
+    text-decoration: none;
+    color: inherit;
+}
 
 /* HOME */
 
@@ -101,10 +151,16 @@ a {
     font-style: italic;
 }
 
-.btn-cv,
-.btn-send-message,
-.btn-go {
-    background-color: #b14fd8;
+.btn-cv {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-cv:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid;
 }
 
 /* PROJECTS */
@@ -259,7 +315,6 @@ a {
 
 footer {
     padding: 20px 0;
-    background-color: #c579c5;
     color: #ffffff;
 }
 
