@@ -1,0 +1,14 @@
+[
+    {
+        "name": "QR code component",
+        "description": "Esta es una solución al desafío del componente de código QR en Frontend Mentor.",
+        "image": "assets/images/QR-code-component.png",
+        "link": "https://qr-code-component-manuela-rendon.netlify.app/"
+    },
+    {
+        "name": "Newsletter signup",
+        "description": "Esta es una solución al desafío de la suscripción a un neswletter en Frontend Mentor.",
+        "image": "assets/images/Newsletter.png",
+        "link": "https://newsletter-manuela-rendon.netlify.app/"
+    }
+]
