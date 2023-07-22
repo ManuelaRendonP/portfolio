@@ -8,6 +8,13 @@ projectsList.push({
     link: 'https://qr-code-component-manuela-rendon.netlify.app/'
 })
 
+projectsList.push({
+    name: 'Newsletter signup',
+    description: 'Esta es una solución al desafío de la suscripción a un neswletter en Frontend Mentor.',
+    image: 'assets/images/Newsletter.png',
+    link: 'https://newsletter-manuela-rendon.netlify.app/'
+})
+
 function renderProjects(arr) {
     for (project of arr) {
         let card = `
