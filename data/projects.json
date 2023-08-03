@@ -16,5 +16,11 @@
         "description": "Desarrollo del juego CONECTA 4, tomando la idea del reto de programación de Mouredev.",
         "image": "assets/images/Conecta4.png",
         "link": "https://conecta4-manuela-rendon.netlify.app/"
+    },
+    {
+        "name": "Juego Mokepon Platzi",
+        "description": "Desarrollo del juego MOKEPON, guiado en un curso de Platzi.",
+        "image": "assets/images/mokepon.png",
+        "link": "https://github.com/ManuelaRendonP/mokepon"
     }
 ]
