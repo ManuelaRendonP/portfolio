@@ -1,5 +1,11 @@
 [
     {
+        "name": "Juego Conecta 4",
+        "description": "Desarrollo del juego CONECTA 4, tomando la idea del reto de programación de Mouredev.",
+        "image": "assets/images/Conecta4.png",
+        "link": "https://conecta4-manuela-rendon.netlify.app/"
+    },
+    {
         "name": "QR code component",
         "description": "Esta es una solución al desafío del componente de código QR en Frontend Mentor.",
         "image": "assets/images/QR-code-component.png",
@@ -10,12 +16,6 @@
         "description": "Esta es una solución al desafío de la suscripción a un neswletter en Frontend Mentor.",
         "image": "assets/images/Newsletter.png",
         "link": "https://newsletter-manuela-rendon.netlify.app/"
-    },
-    {
-        "name": "Juego Conecta 4",
-        "description": "Desarrollo del juego CONECTA 4, tomando la idea del reto de programación de Mouredev.",
-        "image": "assets/images/Conecta4.png",
-        "link": "https://conecta4-manuela-rendon.netlify.app/"
     },
     {
         "name": "Juego Mokepon Platzi",

@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #000, #595959);
+    background: linear-gradient(to bottom, #2E0D56, #9352E3);
     color: white;
     scroll-behavior: smooth;
 }
@@ -269,21 +269,24 @@ dropdown-menu>a {
     transform: scale(1);
 }
 
-/* SKILLS */
+/* LS */
 
 .info-skills>h2,
-.info-skills>h5 {
+.info-skills>h5, 
+.info-technologies>h2,
+.info-technologies>h5 {
     width: 100%;
     text-align: center;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
 }
 
-.info-skills {
+.info-skills, 
+.info-technologies {
     padding-top: 15px;
 }
 
-.card-skill {
+.card-technologie {
     /* estilos para cada tarjeta */
     width: 150px;
     height: 150px;
@@ -291,7 +294,7 @@ dropdown-menu>a {
     position: relative;
 }
 
-.card__image-skill {
+.card__image-technologie {
     /* estilos para la imagen */
     height: 100%;
     width: 100%;
@@ -299,18 +302,57 @@ dropdown-menu>a {
     transition: opacity 0.25s, transform 0.35s;
 }
 
-.card-skill:hover .card__image-skill {
+.card-technologie:hover .card__image-technologie {
     /* estilos para la imagen al pasar el mouse por encima */
     opacity: 0.8;
     transform: scale(1);
 }
 
-.skill-cards {
+.skill-cards,
+.technologie-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
+}
+
+.card-skill {
+    /* Estilos específicos para las tarjetas de habilidades */
+    width: 150px; 
+    height: 150px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    transition: box-shadow 0.3s ease; /* Agregamos una transición suave al efecto de sombra */
+}
+
+.card-skill .card__title {
+    /* Estilos para el título dentro de las tarjetas de habilidades */
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 10px; /* Alineamos el título hacia abajo */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.card-skill .card__image-skill {
+    /* Estilos para la imagen dentro de las tarjetas de habilidades */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-skill:hover {
+    /* Estilos para la tarjeta de habilidad al pasar el mouse por encima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1); /* Añadimos una sombra más pronunciada */
 }
 
 /* FOOTER */

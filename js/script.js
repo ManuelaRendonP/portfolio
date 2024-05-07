@@ -24,6 +24,19 @@ async function fetchSkills() {
     }
 }
 
+async function fetchTechnologies() {
+    try {
+        const response = await fetch('./data/technologies.json');
+        if (!response.ok) {
+            throw new Error('Error al obtener los datos del archivo JSON');
+        }
+        const data = await response.json();
+        renderTechnologies(data);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
 function renderProjects(arr) {
     for (const project of arr) {
         let card = `
@@ -43,17 +56,40 @@ function renderProjects(arr) {
 function renderSkills(arr) {
     for (const skill of arr) {
         let skillCard = `
-        <a href="${skill.link}" class="card-link">
-            <figure class="card-skill">
-                <img src="${skill.image}" class="card__image-skill" />
+        <figure class="card-skill">
+            <img src="${skill.image}" class="card__image-skill" />
+            <p class="card__title">${skill.name}</p> 
+        </figure>`
+        document.querySelector('.skill-cards').insertAdjacentHTML('beforeend', skillCard)
+    }
+}
+
+function renderSkillsEN(arr) {
+    for (const skill of arr) {
+        let skillCard = `
+        <figure class="card-skill">
+            <img src="${skill.image}" class="card__image-skill" />
+            <p class="card__title">${skill.nameEnglish}</p> 
+        </figure>`
+        document.querySelector('.skill-cards').insertAdjacentHTML('beforeend', skillCard)
+    }
+}
+
+function renderTechnologies(arr) {
+    for (const technologie of arr) {
+        let technologieCard = `
+        <a href="${technologie.link}" class="card-link">
+            <figure class="card-technologie">
+                <img src="${technologie.image}" class="card__image-technologie" />
             </figure>
         </a>`
-        document.querySelector('.skill-cards').insertAdjacentHTML('beforeend', skillCard)
+        document.querySelector('.technologie-cards').insertAdjacentHTML('beforeend', technologieCard)
     }
 }
 
 fetchSkills();
 fetchProjects();
+fetchTechnologies();
 
 function toggleDropdown() {
     var dropdown = document.querySelector('.dropdown');
