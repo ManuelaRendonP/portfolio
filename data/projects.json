@@ -6,10 +6,10 @@
         "link": "https://conecta4-manuela-rendon.netlify.app/"
     },
     {
-        "name": "QR code component",
-        "description": "Esta es una solución al desafío del componente de código QR en Frontend Mentor.",
-        "image": "assets/images/QR-code-component.png",
-        "link": "https://qr-code-component-manuela-rendon.netlify.app/"
+        "name": "SaludUCaldas",
+        "description": "Esta es una solución en React hecha para una clase de la Universidad.",
+        "image": "assets/images/SaludUCaldas.png",
+        "link": "https://github.com/SaludUCaldas/SaludUCaldas-frontend-web"
     },
     {
         "name": "Newsletter signup",
@@ -22,5 +22,11 @@
         "description": "Desarrollo del juego MOKEPON, guiado en un curso de Platzi.",
         "image": "assets/images/mokepon.png",
         "link": "https://github.com/ManuelaRendonP/mokepon"
+    },
+    {
+        "name": "QR code component",
+        "description": "Esta es una solución al desafío del componente de código QR en Frontend Mentor.",
+        "image": "assets/images/QR-code-component.png",
+        "link": "https://qr-code-component-manuela-rendon.netlify.app/"
     }
 ]

@@ -62,5 +62,9 @@
     {
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png",
         "link": "https://dotnet.microsoft.com/es-es/languages/csharp"
+    },
+    {
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
+        "link": "https://es.react.dev/"
     }
 ]
